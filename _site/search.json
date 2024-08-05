@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "sources.html",
+    "href": "sources.html",
+    "title": "sources",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "sources.html#quarto",
+    "href": "sources.html#quarto",
+    "title": "sources",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "sources.html#running-code",
+    "href": "sources.html#running-code",
+    "title": "sources",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  },
+  {
+    "objectID": "quarto pub/about.html",
+    "href": "quarto pub/about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About this Site",
+    "section": "",
+    "text": "My name is Judy, an upcomming freshman at Mira Costa High School. My github account is https://github.com/JudyZ2024, and you can contact me through qinxianzhu0608@gmail.com.\nMy project is about C02 emissions from countries worldwide, and how GPT-4 can effect those emissions due to its high energy cost. https://github.com/JudyZ2024/Chatgpt-C02\nThis project was created as a part of Kane’s Data Science Bootcamp https://bootcamp.davidkane.info/"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Chat-GPT effects global C02 Emissions",
+    "section": "",
+    "text": "Chat-gpt, a new valuable aspect of technology has taken over with its versatility.\nI gathered data from Kaggle, explaining fossil fuel emissions from numerous countries worldwide. By analyzing trends in energy consumption and C02 emmissions, it is possible to estimate which year the Earth’s atmosphere might not be able to bear the C02 emitted by centers like GPT-4. I measure the relationship between countries and emission size from 1750-2021.\nWith great power comes great responsibility is not just a cringe line from the movies. Even though Chat-gpt seems so constructive and profitable on the surface, it will not be sustainable in the near future.\n\n\n\n\n\n\n\n\n\nThis plot illustrates the top 8 countries with the highest CO2 emissions in 2020. Countries like China, the United States, and India are among the highest emitters, which reflects their industrial activities and large populations.\nThe impact of AI technologies like ChatGPT on emissions, the primary concern lies in the energy consumption of data centers that host and train these models. Large-scale AI models require substantial computational resources, leading to increased electricity use and, consequently, higher CO2 emissions if the energy is sourced from fossil fuels.\nHowever, AI can also contribute positively by optimizing energy usage, improving efficiency in various sectors, and advancing climate science, which can ultimately help reduce overall emissions. The net effect depends on balancing these factors and ensuring the use of renewable energy sources."
+  },
+  {
+    "objectID": "quarto pub/index.html",
+    "href": "quarto pub/index.html",
+    "title": "Quarto Pub",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  }
+]

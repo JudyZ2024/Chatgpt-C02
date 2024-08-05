@@ -1,0 +1,57 @@
+---
+title: "Chat-GPT effects global C02 Emissions"
+author: "Judy Zhu"
+format: html
+---
+Chat-gpt, a new valuable aspect of technology has taken over with
+its versatility. 
+
+I gathered data from Kaggle, explaining fossil fuel emissions from
+numerous countries worldwide. By analyzing trends in energy consumption and C02 
+emmissions, it is possible to estimate which year the Earth's atmosphere might 
+not be able to bear the C02 emitted by centers like GPT-4. I measure
+the relationship between countries and emission size from 1750-2021.
+
+With great power comes great responsibility is not just a cringe line from 
+the movies. Even though Chat-gpt seems so constructive and profitable on the
+surface, it will not be sustainable in the near future. 
+
+```{r}
+#| echo: false
+#| label: true
+#| message: false
+library(ggplot2)
+library(dplyr)
+
+# Load the data
+data <- read.csv("GCB2022v27_MtCO2_flat.csv")
+
+# Filter the data for the year 2020
+data_2020 <- filter(data, Year == 2020)
+
+# Sort data by total emissions in descending order and get the top 15
+top_15_data <- data_2020 %>% arrange(desc(Total)) %>% head(8)
+
+# Create a bar plot
+ggplot(top_15_data, aes(x = reorder(Country, -Total), y = Total)) +
+  geom_bar(stat = "identity", fill = "skyblue") +
+  labs(title = "Top 8 Countries by Total CO2 Emissions in 2020",
+       x = "Country",
+       y = "Total Emissions (MtCO2)") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  theme_minimal()
+```
+
+This plot illustrates the top 8 countries with the highest CO2 emissions in 2020. Countries like China, the United States, and India are among the highest emitters, 
+which reflects their industrial activities and large populations.
+
+The impact of AI technologies like ChatGPT on emissions, the primary concern lies in the energy consumption of data centers that host and train these models. Large-scale AI models require substantial computational resources, leading to increased electricity use and, consequently, higher CO2 emissions if the energy is sourced from fossil fuels.
+
+However, AI can also contribute positively by optimizing energy usage, improving efficiency in various sectors, and advancing climate science, which can ultimately help reduce overall emissions. The net effect depends on balancing these factors and ensuring the use of renewable energy sources.
+
+
+
+
+
+
+
