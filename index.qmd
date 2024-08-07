@@ -8,7 +8,7 @@ its versatility.
 
 I gathered data from Kaggle, explaining fossil fuel emissions from
 numerous countries worldwide. By analyzing trends in energy consumption and C02 
-emmissions, it is possible to estimate which year the Earth's atmosphere might 
+emissions, it is possible to estimate which year the Earth's atmosphere might 
 not be able to bear the C02 emitted by centers like GPT-4. I measure
 the relationship between countries and emission size from 1750-2021.
 
@@ -18,7 +18,6 @@ surface, it will not be sustainable in the near future.
 
 ```{r}
 #| echo: false
-#| label: true
 #| message: false
 library(ggplot2)
 library(dplyr)
@@ -45,7 +44,7 @@ ggplot(top_15_data, aes(x = reorder(Country, -Total), y = Total)) +
 This plot illustrates the top 8 countries with the highest CO2 emissions in 2020. Countries like China, the United States, and India are among the highest emitters, 
 which reflects their industrial activities and large populations.
 
-The impact of AI technologies like ChatGPT on emissions, the primary concern lies in the energy consumption of data centers that host and train these models. Large-scale AI models require substantial computational resources, leading to increased electricity use and, consequently, higher CO2 emissions if the energy is sourced from fossil fuels.
+The impact of AI technologies like Chat-gpt on emissions, the primary concern lies in the energy consumption of data centers that host and train these models. Large-scale AI models require substantial computational resources, leading to increased electricity use and, consequently, higher CO2 emissions if the energy is sourced from fossil fuels.
 
 However, AI can also contribute positively by optimizing energy usage, improving efficiency in various sectors, and advancing climate science, which can ultimately help reduce overall emissions. The net effect depends on balancing these factors and ensuring the use of renewable energy sources.
 
