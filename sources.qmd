@@ -3,9 +3,7 @@ title: "Sources"
 author: "Judy Zhu"
 format: html
 ---
-Kaggle Dataset:
-https://www.kaggle.com/datasets/ulrikthygepedersen/co2-emissions-by-country
+[Kaggle Dataset](https://www.kaggle.com/datasets/ulrikthygepedersen/co2-emissions-by-country)
 
-Ai results in energy crisis:
-https://www.forbes.com/sites/arielcohen/2024/05/23/ai-is-pushing-the-world-towards-an-energy-crisis/ 
+[Ai results in energy crisis](https://www.forbes.com/sites/arielcohen/2024/05/23/ai-is-pushing-the-world-towards-an-energy-crisis/)
 
