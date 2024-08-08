@@ -18,16 +18,6 @@ library(tidyr)
 # Load the data
 data <- read.csv("GCB2022v27_MtCO2_flat.csv")
 
-# Define the emissions column
-emissions_col <- "Total"  # Correct column name for total CO2 emissions
-
-# Filter data for the year 2020
-data_2020 <- data %>% filter(Year == 2020)
-
-# Select top 8 countries with highest CO2 emissions
-top8_countries <- data_2020 %>%
-  arrange(desc(.data[[emissions_col]])) %>%
-  head(8)
 
 # Fit a linear model to the data
 model <- lm(Total ~ Year, data = data)
