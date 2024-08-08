@@ -21,7 +21,14 @@ surface, it will not be sustainable in the near future.
 #| message: false
 library(ggplot2)
 library(dplyr)
+library(tidyverse)
+library(primer.data)
+```
 
+
+```{r}
+#| echo: false
+#| message: false
 # Load the data
 data <- read.csv("GCB2022v27_MtCO2_flat.csv")
 
@@ -47,6 +54,8 @@ which reflects their industrial activities and large populations.
 The impact of AI technologies like Chat-gpt on emissions, the primary concern lies in the energy consumption of data centers that host and train these models. Large-scale AI models require substantial computational resources, leading to increased electricity use and, consequently, higher CO2 emissions if the energy is sourced from fossil fuels.
 
 However, AI can also contribute positively by optimizing energy usage, improving efficiency in various sectors, and advancing climate science, which can ultimately help reduce overall emissions. The net effect depends on balancing these factors and ensuring the use of renewable energy sources.
+
+
 
 
 

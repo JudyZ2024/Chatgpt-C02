@@ -1,0 +1,58 @@
+---
+title: "Model"
+author: "Judy Zhu"
+format: html
+---
+
+```{r}
+#| message: false
+#| echo: false
+#| cache: true
+#| warning: false
+# Load necessary libraries
+library(dplyr)
+library(ggplot2)
+library(gtsummary)
+library(tidyr)
+
+# Load the data
+data <- read.csv("GCB2022v27_MtCO2_flat.csv")
+
+# Define the emissions column
+emissions_col <- "Total"  # Correct column name for total CO2 emissions
+
+# Filter data for the year 2020
+data_2020 <- data %>% filter(Year == 2020)
+
+# Select top 8 countries with highest CO2 emissions
+top8_countries <- data_2020 %>%
+  arrange(desc(.data[[emissions_col]])) %>%
+  head(8)
+
+# Fit a linear model to the data
+model <- lm(Total ~ Year, data = data)
+
+# Create a summary table using gtsummary
+model_summary <- tbl_regression(model)
+
+# Predict future CO2 emissions
+future_years <- data.frame(Year = seq(2020, 2100, by = 1))
+predictions <- predict(model, newdata = future_years)
+
+# Find the year when CO2 emissions might become unsustainable
+# Assuming a threshold (example: 50,000 Mt)
+threshold <- 50000
+unsustainable_year <- future_years$Year[which(predictions >= threshold)[1]]
+
+# Print the year
+print(unsustainable_year)
+
+# Display the model's parameters
+model_summary
+
+```
+
+$$\text{CO2\_Emissions} = \beta_0 + \beta_1 \times \text{Year} + \epsilon$$
+
+
+
