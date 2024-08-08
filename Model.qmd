@@ -1,0 +1,70 @@
+---
+title: "Model"
+author: "Judy Zhu"
+---
+
+
+```{r}
+#| echo: false
+#| message: false
+# Load necessary libraries
+library(tidyverse)
+library(broom)
+library(gtsummary)
+library(tidyr)
+library(purrr)
+library(gt)
+
+# Load the data
+data <- read_csv("GCB2022v27_MtCO2_flat.csv")
+
+# Filter data for the year 2020 and select the top 8 countries with highest emissions
+data_2020 <- data %>%
+  filter(Year == 2020) %>%
+  arrange(desc(Total)) %>%
+  slice(1:8)
+
+# Plot the data
+ggplot(data_2020, aes(x = reorder(Country, -Total), y = Total, fill = Country)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Top 8 Countries with the Highest CO2 Emissions in 2020",
+       x = "Country",
+       y = "CO2 Emissions (MtCO2)",
+       fill = "Country") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# Filter data for the top 3 emitting countries (China, USA, India) for simplicity
+top_countries <- c("China", "United States", "India")
+data_top_countries <- data %>%
+  filter(Country %in% top_countries)
+
+# Fit a linear model for each country
+model_list <- data_top_countries %>%
+  group_by(Country) %>%
+  nest() %>%
+  mutate(model = map(data, ~ lm(Total ~ Year, data = .x)))
+
+# Summarize the models
+model_summary <- model_list %>%
+  mutate(tidy_model = map(model, tidy)) %>%
+  unnest(tidy_model)
+
+# Display model summaries
+print(model_summary)
+
+# Create a table of parameter estimates using gtsummary
+model_table <- model_list %>%
+  mutate(gt_model = map(model, ~ tbl_regression(.x))) %>%
+  pull(gt_model) %>%
+  tbl_stack() %>%
+  as_gt()
+
+# Display the table
+print(model_table)
+
+
+
+```
+
+
