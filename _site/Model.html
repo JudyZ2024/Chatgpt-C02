@@ -8,7 +8,7 @@
 
 <meta name="author" content="Judy Zhu">
 
-<title>. - Chat-GPT effects global C02 Emissions</title>
+<title>. - Model</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -90,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -116,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Chat-GPT effects global C02 Emissions</h1>
+<h1 class="title">Model</h1>
 </div>
 
 
@@ -139,21 +139,514 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Chat-gpt, a new valuable aspect of technology has taken over with its versatility.</p>
-<p>I gathered data from Kaggle, explaining fossil fuel emissions from numerous countries worldwide. By analyzing trends in energy consumption and C02 emissions, it is possible to estimate which year the Earth’s atmosphere might not be able to bear the C02 emitted by centers like GPT-4. I measure the relationship between countries and emission size from 1750-2021.</p>
-<p>With great power comes great responsibility is not just a cringe line from the movies. Even though Chat-gpt seems so constructive and profitable on the surface, it will not be sustainable in the near future.</p>
 <div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'gtsummary' was built under R version 4.4.1</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'gt' was built under R version 4.4.1</code></pre>
+</div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Model_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 8
+# Groups:   Country [2]
+  Country data                model  term  estimate std.error statistic  p.value
+  &lt;chr&gt;   &lt;list&gt;              &lt;list&gt; &lt;chr&gt;    &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;
+1 China   &lt;tibble [272 × 10]&gt; &lt;lm&gt;   (Int…  -3.23e4  2763.        -11.7 7.55e-26
+2 China   &lt;tibble [272 × 10]&gt; &lt;lm&gt;   Year    1.76e1     1.46       12.0 5.14e-27
+3 India   &lt;tibble [272 × 10]&gt; &lt;lm&gt;   (Int…  -7.27e3   611.        -11.9 1.55e-26
+4 India   &lt;tibble [272 × 10]&gt; &lt;lm&gt;   Year    3.96e0     0.324      12.3 9.47e-28</code></pre>
 </div>
-<p>This plot illustrates the top 8 countries with the highest CO2 emissions in 2020. Countries like China, the United States, and India are among the highest emitters, which reflects their industrial activities and large populations.</p>
-<p>The impact of AI technologies like Chat-gpt on emissions, the primary concern lies in the energy consumption of data centers that host and train these models. Large-scale AI models require substantial computational resources, leading to increased electricity use and, consequently, higher CO2 emissions if the energy is sourced from fossil fuels.</p>
-<p>However, AI can also contribute positively by optimizing energy usage, improving efficiency in various sectors, and advancing climate science, which can ultimately help reduce overall emissions. The net effect depends on balancing these factors and ensuring the use of renewable energy sources.</p>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;div id="apamcuucba" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;"&gt;
+  &lt;style&gt;#apamcuucba table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#apamcuucba thead, #apamcuucba tbody, #apamcuucba tfoot, #apamcuucba tr, #apamcuucba td, #apamcuucba th {
+  border-style: none;
+}
+
+#apamcuucba p {
+  margin: 0;
+  padding: 0;
+}
+
+#apamcuucba .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#apamcuucba .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#apamcuucba .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#apamcuucba .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#apamcuucba .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#apamcuucba .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#apamcuucba .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#apamcuucba .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#apamcuucba .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#apamcuucba .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#apamcuucba .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#apamcuucba .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#apamcuucba .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#apamcuucba .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#apamcuucba .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#apamcuucba .gt_from_md &gt; :first-child {
+  margin-top: 0;
+}
+
+#apamcuucba .gt_from_md &gt; :last-child {
+  margin-bottom: 0;
+}
+
+#apamcuucba .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#apamcuucba .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#apamcuucba .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#apamcuucba .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#apamcuucba .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#apamcuucba .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#apamcuucba .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#apamcuucba .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#apamcuucba .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#apamcuucba .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#apamcuucba .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#apamcuucba .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#apamcuucba .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#apamcuucba .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#apamcuucba .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#apamcuucba .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#apamcuucba .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#apamcuucba .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#apamcuucba .gt_left {
+  text-align: left;
+}
+
+#apamcuucba .gt_center {
+  text-align: center;
+}
+
+#apamcuucba .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#apamcuucba .gt_font_normal {
+  font-weight: normal;
+}
+
+#apamcuucba .gt_font_bold {
+  font-weight: bold;
+}
+
+#apamcuucba .gt_font_italic {
+  font-style: italic;
+}
+
+#apamcuucba .gt_super {
+  font-size: 65%;
+}
+
+#apamcuucba .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#apamcuucba .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#apamcuucba .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#apamcuucba .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#apamcuucba .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#apamcuucba .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#apamcuucba .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#apamcuucba .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#apamcuucba div.Reactable &gt; div.rt-table &gt; div.rt-thead &gt; div.rt-tr.rt-tr-group-header &gt; div.rt-th-group:after {
+  height: 0px !important;
+}
+&lt;/style&gt;
+  &lt;table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false"&gt;
+  &lt;thead&gt;
+    &lt;tr class="gt_col_headings"&gt;
+      &lt;th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="&amp;lt;div data-qmd-base64=&amp;quot;KipDaGFyYWN0ZXJpc3RpYyoq&amp;quot;&amp;gt;&amp;lt;div class='gt_from_md'&amp;gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Characteristic&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;#10;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;"&gt;&lt;div data-qmd-base64="KipDaGFyYWN0ZXJpc3RpYyoq"&gt;&lt;div class='gt_from_md'&gt;&lt;p&gt;&lt;strong&gt;Characteristic&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/th&gt;
+      &lt;th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="&amp;lt;div data-qmd-base64=&amp;quot;KipCZXRhKio=&amp;quot;&amp;gt;&amp;lt;div class='gt_from_md'&amp;gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Beta&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;#10;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;"&gt;&lt;div data-qmd-base64="KipCZXRhKio="&gt;&lt;div class='gt_from_md'&gt;&lt;p&gt;&lt;strong&gt;Beta&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/th&gt;
+      &lt;th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="&amp;lt;div data-qmd-base64=&amp;quot;Kio5NSUgQ0kqKg==&amp;quot;&amp;gt;&amp;lt;div class='gt_from_md'&amp;gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;95% CI&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;#10;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;span class=&amp;quot;gt_footnote_marks&amp;quot; style=&amp;quot;white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;&amp;quot;&amp;gt;&amp;lt;sup&amp;gt;1&amp;lt;/sup&amp;gt;&amp;lt;/span&amp;gt;"&gt;&lt;div data-qmd-base64="Kio5NSUgQ0kqKg=="&gt;&lt;div class='gt_from_md'&gt;&lt;p&gt;&lt;strong&gt;95% CI&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt;&lt;/th&gt;
+      &lt;th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="&amp;lt;div data-qmd-base64=&amp;quot;KipwLXZhbHVlKio=&amp;quot;&amp;gt;&amp;lt;div class='gt_from_md'&amp;gt;&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;p-value&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;&amp;#10;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;"&gt;&lt;div data-qmd-base64="KipwLXZhbHVlKio="&gt;&lt;div class='gt_from_md'&gt;&lt;p&gt;&lt;strong&gt;p-value&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody class="gt_table_body"&gt;
+    &lt;tr&gt;&lt;td headers="label" class="gt_row gt_left"&gt;Year&lt;/td&gt;
+&lt;td headers="estimate" class="gt_row gt_center"&gt;18&lt;/td&gt;
+&lt;td headers="ci" class="gt_row gt_center"&gt;15, 21&lt;/td&gt;
+&lt;td headers="p.value" class="gt_row gt_center"&gt;&lt;0.001&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td headers="label" class="gt_row gt_left"&gt;Year&lt;/td&gt;
+&lt;td headers="estimate" class="gt_row gt_center"&gt;4.0&lt;/td&gt;
+&lt;td headers="ci" class="gt_row gt_center"&gt;3.3, 4.6&lt;/td&gt;
+&lt;td headers="p.value" class="gt_row gt_center"&gt;&lt;0.001&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+  
+  &lt;tfoot class="gt_footnotes"&gt;
+    &lt;tr&gt;
+      &lt;td class="gt_footnote" colspan="4"&gt;&lt;span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height: 0;"&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/span&gt; &lt;div data-qmd-base64="Q0kgPSBDb25maWRlbmNlIEludGVydmFs"&gt;&lt;div class='gt_from_md'&gt;&lt;p&gt;CI = Confidence Interval&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
 
 
 

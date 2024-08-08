@@ -8,32 +8,4 @@ https://www.kaggle.com/datasets/ulrikthygepedersen/co2-emissions-by-country
 
 Ai results in energy crisis:
 https://www.forbes.com/sites/arielcohen/2024/05/23/ai-is-pushing-the-world-towards-an-energy-crisis/ 
-```{r}
-# Load necessary libraries
-library(tidyverse)
-library(ggplot2)
 
-# Load the data
-data <- read_csv("GCB2022v27_MtCO2_flat.csv")
-
-# Inspect the column names
-colnames(data)
-
-# Based on the column names, adjust the filter and arrange functions
-# Assuming the column for total emissions is named "Total"
-data_2020 <- data %>%
-  filter(Year == 2020) %>%
-  arrange(desc(Total)) %>%
-  slice(1:8)
-
-# Plot the data
-ggplot(data_2020, aes(x = reorder(Country, -Total), y = Total, fill = Country)) +
-  geom_bar(stat = "identity") +
-  labs(title = "Top 8 Countries with the Highest CO2 Emissions in 2020",
-       x = "Country",
-       y = "CO2 Emissions (MtCO2)",
-       fill = "Country") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-
-```

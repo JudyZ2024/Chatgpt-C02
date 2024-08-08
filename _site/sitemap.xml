@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://76ff67dd-ccc3-4bec-9be6-eea639e9a4c3.netlify.app/sources.html</loc>
-    <lastmod>2024-08-04T04:31:40.918Z</lastmod>
+    <loc>https://judy-zhu.quarto.pub/chat-gpt-co2/sources.html</loc>
+    <lastmod>2024-08-08T00:10:03.973Z</lastmod>
   </url>
   <url>
-    <loc>https://76ff67dd-ccc3-4bec-9be6-eea639e9a4c3.netlify.app/quarto pub/about.html</loc>
+    <loc>https://judy-zhu.quarto.pub/chat-gpt-co2/quarto pub/about.html</loc>
     <lastmod>2024-08-04T05:18:30.305Z</lastmod>
   </url>
   <url>
-    <loc>https://76ff67dd-ccc3-4bec-9be6-eea639e9a4c3.netlify.app/about.html</loc>
-    <lastmod>2024-08-04T05:03:09.790Z</lastmod>
+    <loc>https://judy-zhu.quarto.pub/chat-gpt-co2/index.html</loc>
+    <lastmod>2024-08-07T03:20:39.305Z</lastmod>
   </url>
   <url>
-    <loc>https://76ff67dd-ccc3-4bec-9be6-eea639e9a4c3.netlify.app/index.html</loc>
-    <lastmod>2024-08-04T05:13:04.436Z</lastmod>
+    <loc>https://judy-zhu.quarto.pub/chat-gpt-co2/about.html</loc>
+    <lastmod>2024-08-07T03:23:39.943Z</lastmod>
   </url>
   <url>
-    <loc>https://76ff67dd-ccc3-4bec-9be6-eea639e9a4c3.netlify.app/quarto pub/index.html</loc>
+    <loc>https://judy-zhu.quarto.pub/chat-gpt-co2/Model.html</loc>
+    <lastmod>2024-08-08T00:17:11.314Z</lastmod>
+  </url>
+  <url>
+    <loc>https://judy-zhu.quarto.pub/chat-gpt-co2/quarto pub/index.html</loc>
     <lastmod>2024-08-04T05:18:30.303Z</lastmod>
   </url>
 </urlset>

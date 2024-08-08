@@ -1,1 +1,1 @@
-Sitemap: https://76ff67dd-ccc3-4bec-9be6-eea639e9a4c3.netlify.app/sitemap.xml
+Sitemap: https://judy-zhu.quarto.pub/chat-gpt-co2/sitemap.xml
